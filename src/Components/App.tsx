@@ -1,5 +1,10 @@
-import { Header } from './header/header';
+import './App.scss';
+import { Home } from './homePage/home';
 
 export function App() {
-  return <Header />;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
