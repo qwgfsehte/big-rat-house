@@ -1,0 +1,93 @@
+.pet {
+  &-img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+  }
+
+  &-name {
+    font-size: 20px;
+  }
+}
+
+.pets {
+  &-title {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  &-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+.section-pets {
+  background-color: #efefd7;
+  padding: 80px 0px;
+}
+
+.card-pet {
+  background-color: #fffff0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.button {
+  &-swap {
+    border: 2px solid #fffff0;
+    background-color: #efefd7;
+    border-radius: 100px;
+    padding: 23px 19px 23px 19px;
+    width: 52px;
+    height: 52px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/src/assets/icon-arrow.png);
+  }
+
+  &-left {
+    transform: rotateY(180deg);
+  }
+
+  &-learn {
+    border: 2px solid #efefd7;
+    padding: 15px 45px 15px 45px;
+    border-radius: 100px;
+    background-color: #fffff0;
+    font-family: 'Lora', serif;
+    font-size: 17px;
+  }
+
+  &-details {
+    font-family: 'Lora', serif;
+    border: 2px solid #fffff0;
+    background-color: #fffff0;
+    border-radius: 100px;
+    padding: 15px 45px 15px 45px;
+    font-size: 17px;
+  }
+}

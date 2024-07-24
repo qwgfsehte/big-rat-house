@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 40px 0px;
 
     &__img {
       width: 100%;
@@ -37,6 +37,8 @@
 
 .desription-container {
   display: flex;
+  flex-direction: column;
+  gap: 50px;
   flex-direction: column;
   gap: 50px;
 }

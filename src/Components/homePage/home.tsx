@@ -1,7 +1,8 @@
 import { Header } from '../header/header';
 import { Hero } from './hero/hero';
 import './home.scss';
-import { About } from './sectionAbout/about';
+import { About } from './section-about/about';
+import { OurPets } from './section-our-pets/ourPets';
 
 export function Home() {
   return (
@@ -13,6 +14,7 @@ export function Home() {
         </div>
       </div>
       <About />
+      <OurPets />
     </div>
   );
 }
