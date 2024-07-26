@@ -2,16 +2,16 @@ import './about.scss';
 
 export function About() {
   return (
-    <section className="about-section" id="section-about">
+    <section className="about-section">
       <img
         src="/src/assets/about-rat.png"
         alt=""
         className="about-section__img"
       />
       <div className="about-container__description">
-        <h2 className="about-title">{'About the Shelter "Tailed House"'}</h2>
+        <h2 className="about-title">{'About the Shelter "Big Rat House"'}</h2>
         <p className="about-description">
-          {`At Tailed House, we currently care for 207 rats and 98 hamsters.
+          {`At Big Rat House, we currently care for 207 rats and 98 hamsters.
           Unfortunately, statistics show that only about 25% of them will find
           their forever homes. The remaining animals will continue to stay with
           us, holding on to the hope that one day they'll find a loving family.`}

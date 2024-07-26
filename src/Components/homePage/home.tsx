@@ -2,6 +2,7 @@ import { Header } from '../header/header';
 import { Hero } from './hero/hero';
 import './home.scss';
 import { About } from './section-about/about';
+import { SectionHelp } from './section-help/help';
 import { OurPets } from './section-our-pets/ourPets';
 
 export function Home() {
@@ -15,6 +16,7 @@ export function Home() {
       </div>
       <About />
       <OurPets />
+      <SectionHelp />
     </div>
   );
 }
