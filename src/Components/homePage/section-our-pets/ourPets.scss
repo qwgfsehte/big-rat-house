@@ -46,13 +46,20 @@
 
 .card-pet {
   background-color: #fffff0;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 9px;
   gap: 10px;
   padding-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 1px 1px 20px 20px rgba(202, 202, 202, 0.2);
+  }
 }
 
 .button {
@@ -66,7 +73,8 @@
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(/src/assets/icon-arrow.png);
+    background-image: url(/icon-arrow.png);
+    cursor: pointer;
   }
 
   &-left {
@@ -80,6 +88,12 @@
     background-color: #fffff0;
     font-family: 'Lora', serif;
     font-size: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ebebbd;
+    }
   }
 
   &-details {
@@ -89,5 +103,25 @@
     border-radius: 100px;
     padding: 15px 45px 15px 45px;
     font-size: 17px;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+
+  &-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    overflow: hidden;
   }
 }

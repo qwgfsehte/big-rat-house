@@ -36,7 +36,7 @@ export function SectionHelp() {
         </div>
         <div className="volunteer-container">
           <img
-            src="/src/assets/help-section.jpg"
+            src="/help-section.jpg"
             alt="volunteer with rat"
             className="volunteer-img"
           />

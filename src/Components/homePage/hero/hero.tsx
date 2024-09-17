@@ -12,11 +12,7 @@ export function Hero() {
         </p>
         <button className="hero-button">{'Find a New Friend'}</button>
       </div>
-      <img
-        src="/src/assets/hero-rat.png"
-        alt=""
-        className="hero-section__img"
-      />
+      <img src="/hero-rat.png" alt="" className="hero-section__img" />
     </section>
   );
 }

@@ -3,11 +3,7 @@ import './about.scss';
 export function About() {
   return (
     <section className="about-section">
-      <img
-        src="/src/assets/about-rat.png"
-        alt=""
-        className="about-section__img"
-      />
+      <img src="/about-rat.png" alt="" className="about-section__img" />
       <div className="about-container__description">
         <h2 className="about-title">{'About the Shelter "Big Rat House"'}</h2>
         <p className="about-description">

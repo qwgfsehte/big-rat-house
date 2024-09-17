@@ -8,7 +8,7 @@ export function Footer() {
           <h3 className="footer-title">For questions and suggestions</h3>
           <div className="footer-info">
             <img
-              src="/src/assets/icons/email.png"
+              src="/icons/email.png"
               alt="email-icon"
               className="footer-icon"
             />
@@ -23,7 +23,7 @@ export function Footer() {
           </div>
           <div className="footer-info">
             <img
-              src="/src/assets/icons/phone.png"
+              src="/icons/phone.png"
               alt="phone-icon"
               className="footer-icon"
             />
@@ -36,7 +36,7 @@ export function Footer() {
           <h3 className="footer-title">We are waiting for your visit</h3>
           <div className="footer-info">
             <img
-              src="/src/assets/icons/point.png"
+              src="/icons/point.png"
               alt="point-icon"
               className="footer-icon"
             />
@@ -46,7 +46,7 @@ export function Footer() {
           </div>
           <div className="footer-info">
             <img
-              src="/src/assets/icons/point.png"
+              src="/icons/point.png"
               alt="point-icon"
               className="footer-icon"
             />
@@ -55,7 +55,7 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <img src="/src/assets/footer.png" alt="" />
+        <img src="/footer.png" alt="" />
       </div>
     </footer>
   );

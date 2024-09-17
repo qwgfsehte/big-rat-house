@@ -4,11 +4,7 @@ export function SectionDonation() {
   return (
     <section className="section-donation">
       <div className="donation-container">
-        <img
-          src="/src/assets/donation-section.png"
-          alt=""
-          className="donation-img"
-        />
+        <img src="/donation-section.png" alt="" className="donation-img" />
         <div className="donation-description">
           <h2 className="donation-title">You can also make a donation</h2>
           <p className="donation-subtitle">
@@ -16,7 +12,7 @@ export function SectionDonation() {
           </p>
           <div className="card-donation">
             <img
-              src="/src/assets/icons/credit-card.png"
+              src="/icons/credit-card.png"
               alt="credit-card"
               className="card-img"
             />
