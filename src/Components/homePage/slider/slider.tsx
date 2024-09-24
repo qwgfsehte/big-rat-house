@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
 import { allPets } from '../../../utils/allPets';
-import '../section-our-pets/ourPets.scss';
 import { animated, useSpring } from '@react-spring/web';
+import { CardPet } from '../../card-pet/card-pet';
+import './slider.scss';
 
 const ITEMS_PER_PAGE = 3;
 const FIRST_SLIDE = 1;
@@ -20,7 +21,7 @@ export default function Slider() {
     from: { transform: `translateX(${direction * 100}%)` },
     to: { transform: 'translateX(0%)' },
     reset: true,
-    config: { tension: 500, friction: 40 },
+    config: { tension: 400, friction: 40 },
   });
 
   const handleClickRightButton = () => {
@@ -42,21 +43,24 @@ export default function Slider() {
   };
 
   return (
-    <>
-      <button
-        onClick={handleClickLeftButton}
-        className="button-swap button-left"
-      ></button>
+    <div className="slider-container">
+      <div className="background-button">
+        <button
+          onClick={handleClickLeftButton}
+          className="button-swap button-left"
+        ></button>
+      </div>
       <animated.div className="cards-container" style={styles}>
-        {currentSlide.map(item => (
-          <div key={item.id} className="card-pet">
-            <img className="pet-img" src={item.img} alt="rat" />
-            <p className="pet-name">{item.name}</p>
-            <button className="button-learn">Learn more</button>
-          </div>
+        {currentSlide.map((item, index) => (
+          <CardPet pet={item} key={index} />
         ))}
       </animated.div>
-      <button onClick={handleClickRightButton} className="button-swap"></button>
-    </>
+      <div className="background-button">
+        <button
+          onClick={handleClickRightButton}
+          className="button-swap"
+        ></button>
+      </div>
+    </div>
   );
 }

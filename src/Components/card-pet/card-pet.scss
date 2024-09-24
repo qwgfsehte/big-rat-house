@@ -1,0 +1,48 @@
+.card-pet {
+  background-color: #fffff0;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  gap: 10px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 1px 1px 20px 20px rgba(202, 202, 202, 0.2);
+  }
+}
+
+.pet {
+  &-img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+  }
+
+  &-name {
+    font-size: 20px;
+  }
+}
+
+.button {
+  &-learn {
+    border: 2px solid #fbfbd9;
+    padding: 15px 45px 15px 45px;
+    border-radius: 100px;
+    background-color: #fffff0;
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fbfbd9;
+    }
+  }
+}

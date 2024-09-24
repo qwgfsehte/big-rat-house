@@ -3,7 +3,7 @@ import './help.scss';
 
 export function SectionHelp() {
   return (
-    <section className="section-help">
+    <section className="section-help" id="help-shelter">
       <h2 className="help-title">How you can help our shelter</h2>
       <div className="help-list">
         <div className="help-slider">
