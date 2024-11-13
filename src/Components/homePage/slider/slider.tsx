@@ -1,5 +1,4 @@
-import { useMemo, useState } from 'react';
-import { allPets } from '../../../utils/allPets';
+import { useEffect, useMemo, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
 import { CardPet } from '../../card-pet/card-pet';
 import './slider.scss';
@@ -7,15 +6,29 @@ import './slider.scss';
 const ITEMS_PER_PAGE = 3;
 const FIRST_SLIDE = 1;
 
+type Rat = {
+  id: number;
+  name: string;
+  img: string;
+};
+
 export default function Slider() {
   const [currentNumberSlide, setCurrentNumberSlide] = useState(1);
   const [direction, setDirection] = useState(1);
+  const [allPets, setRats] = useState<Rat[]>([]);
+
+  useEffect(() => {
+    fetch('/data.json')
+      .then(response => response.json())
+      .then(data => setRats(data))
+      .catch(error => console.error('Ошибка при загрузке данных:', error));
+  }, []);
 
   const currentSlide = useMemo(() => {
     const indexOfLastItem = currentNumberSlide * ITEMS_PER_PAGE;
     const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
     return allPets.slice(indexOfFirstItem, indexOfLastItem);
-  }, [currentNumberSlide]);
+  }, [allPets, currentNumberSlide]);
 
   const styles = useSpring({
     from: { transform: `translateX(${direction * 100}%)` },
@@ -52,7 +65,7 @@ export default function Slider() {
       </div>
       <animated.div className="cards-container" style={styles}>
         {currentSlide.map((item, index) => (
-          <CardPet pet={item} key={index} />
+          <CardPet pet={item} key={index} isPage="home" />
         ))}
       </animated.div>
       <div className="background-button">

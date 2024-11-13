@@ -1,5 +1,4 @@
 .card-pet {
-  background-color: #fffff0;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +9,7 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.5s;
+  width: fit-content;
 
   &:hover {
     box-shadow: 1px 1px 20px 20px rgba(202, 202, 202, 0.2);
@@ -33,10 +33,10 @@
 .button {
   &-learn {
     border: 2px solid #fbfbd9;
+    font-family: 'Merienda', cursive;
     padding: 15px 45px 15px 45px;
     border-radius: 100px;
     background-color: #fffff0;
-    font-family: 'Lora', serif;
     font-size: 17px;
     transition: 0.5s;
     cursor: pointer;
@@ -45,4 +45,12 @@
       background-color: #fbfbd9;
     }
   }
+}
+
+.home-card {
+  background-color: #fffff0;
+}
+
+.our-pets-card {
+  background-color: #efefd7;
 }

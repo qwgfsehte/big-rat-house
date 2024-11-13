@@ -19,7 +19,7 @@ export function Header() {
     <header className="header">
       <div>
         <h1 className="logo-title">Big Rat House</h1>
-        <div>Shelter for rats in Chicago</div>
+        <div>Shelter for rats in Toronto</div>
       </div>
       <nav className="nav-panel">
         <HashLink className="nav-panel__item" smooth to="/#about-shelter">
