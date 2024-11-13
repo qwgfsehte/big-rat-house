@@ -1,4 +1,4 @@
-import './card-pet.scss';
+import './styles.scss';
 
 interface CardPetProps {
   pet: {

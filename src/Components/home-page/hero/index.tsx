@@ -1,5 +1,5 @@
 import { HashLink } from 'react-router-hash-link';
-import './hero.scss';
+import './styles.scss';
 
 export function Hero() {
   return (

@@ -1,5 +1,5 @@
 import { helpIcons } from '../../../utils/helpIcons';
-import './help.scss';
+import './styles.scss';
 
 export function SectionHelp() {
   return (

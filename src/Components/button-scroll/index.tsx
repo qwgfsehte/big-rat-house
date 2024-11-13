@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './buttonStyles.scss';
+import './styles.scss';
 
 export default function ButtonScroll() {
   const [isVisible, setIsVisible] = useState(false);

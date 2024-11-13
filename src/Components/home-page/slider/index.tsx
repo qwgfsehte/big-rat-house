@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
-import { CardPet } from '../../card-pet/card-pet';
-import './slider.scss';
+import { CardPet } from '../../card-pet';
+import './styles.scss';
 
 const ITEMS_PER_PAGE = 3;
 const FIRST_SLIDE = 1;

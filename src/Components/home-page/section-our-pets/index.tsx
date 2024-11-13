@@ -1,5 +1,5 @@
-import Slider from '../slider/slider';
-import './ourPets.scss';
+import Slider from '../slider';
+import './styles.scss';
 
 export function OurPets() {
   return (

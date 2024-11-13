@@ -1,4 +1,4 @@
-import './donation.scss';
+import './styles.scss';
 
 export function SectionDonation() {
   return (

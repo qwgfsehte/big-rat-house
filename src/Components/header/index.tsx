@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import './header.scss';
+import './styles.scss';
 import { HashLink } from 'react-router-hash-link';
 import { useEffect } from 'react';
 

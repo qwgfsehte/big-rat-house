@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
-import { CardPet } from '../card-pet/card-pet';
-import './ourPetsPage.scss';
+import { CardPet } from '../card-pet';
+import './styles.scss';
 
 const ITEMS_PER_PAGE = 8;
 

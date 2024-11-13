@@ -1,8 +1,8 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import { Home } from './homePage/home';
+import { Home } from './home-page';
 import { Layout } from './layout';
-import { OurPetsPage } from './ourPetsPage/ourPetsPage';
+import { OurPetsPage } from './our-pets-page';
 
 export function App() {
   return (
